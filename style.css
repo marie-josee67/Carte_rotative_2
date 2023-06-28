@@ -32,7 +32,7 @@ body{
 
 .container:hover > .card{ /* .container:hover >.card  ==> le container plus la card*/
     cursor: pointer; /* quand le curseur passe dessus */
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) rotateZ(180deg);
 }
 
 /* L'avant et l'arrière de la carte */
@@ -54,10 +54,12 @@ body{
 /* l'arrière de la carte */
 .back{
     background-color: #3a3a3a;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) rotateZ(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:5rem; /* écran entre le titre et le paragraphe */
+    padding:20px;
+    text-align: justify;
 }
